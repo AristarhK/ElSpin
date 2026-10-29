@@ -1,0 +1,28 @@
+{
+  "interpretation": "Exploratory sensitivity bounds, not measured PVA properties or probability intervals",
+  "gas_boundary_radius_m": [
+    0.0002,
+    0.005
+  ],
+  "liquid_diffusivity_m2_s": [
+    1e-12,
+    1e-08
+  ],
+  "viscosity_Pa_s": [
+    0.05,
+    0.8
+  ],
+  "relaxation_time_s": [
+    0.001,
+    0.1
+  ],
+  "conductivity_S_m": [
+    2e-06,
+    0.0002
+  ],
+  "flory_huggins_chi": [
+    0,
+    0.5
+  ],
+  "limitations": "No actual grade/Mw/hydrolysis or measurements supplied; boundary-film thickness and liquid diffusivity require identification."
+}

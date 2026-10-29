@@ -1,0 +1,5 @@
+# Direct dependency versions used for the saved numerical validation (Python 3.11+).
+numpy==2.3.5
+scipy==1.17.0
+matplotlib==3.10.8
+plotly==6.3.1

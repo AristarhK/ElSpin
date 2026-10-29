@@ -1,0 +1,25 @@
+! Short transient for ordinary atmospheric air, approximated by dry N2/O2 (80/20).
+! The seed below is an ILLUSTRATIVE initial condition, not a predicted ambient density.
+&air_plasma
+ p_nr = 256
+ p_nz = 256
+ p_radius = 2.0e-4
+ p_length = 2.0e-3
+ p_stretch_r = 2.0
+ p_stretch_z = 2.0
+ p_end_time = 2.0e-10
+ p_dt_max = 2.5e-13
+ p_max_steps = 100000
+ p_log_every = 20
+ p_background_ne = 1.0e8
+ p_seed_ne = 1.0e17
+ p_seed_z = 1.5e-4
+ p_seed_r_width = 3.0e-5
+ p_seed_z_width = 5.0e-5
+ p_positive_mobility = 2.0e-4
+ p_negative_mobility = 2.0e-4
+ p_beta_ei = 2.0e-13
+ p_beta_ii = 1.0e-13
+ p_energy_transport_factor = 1.6666666666666667
+ p_transport_file = 'air_transport.csv'
+/

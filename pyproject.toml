@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "electrospin-research"
+version = "0.5.0"
+description = "Desktop electrospinning: FENE-P jet dynamics, charge transport and reproducible studies"
+requires-python = ">=3.11"
+dependencies = ["numpy>=2.0,<3", "scipy>=1.14,<2", "matplotlib>=3.9,<4", "plotly==6.3.1", "PySide6-Essentials==6.8.3"]
+
+[project.scripts]
+electrospin = "electrospin.cli:main"
+elspin-desktop = "electrospin.desktop:main"
+
+[tool.setuptools]
+packages = ["electrospin"]

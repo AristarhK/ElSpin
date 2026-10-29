@@ -1,0 +1,58 @@
+! Illustrative aqueous polymer solution; these are NOT measured installation data.
+! SI units. Jet starts AFTER the Taylor cone. Needle and jet radii are different.
+&spinning
+ V_voltage = 3500.0
+ Z_max = 0.10
+ R_needle = 2.5e-4
+ R_max = 0.15
+ jet_radius_in = 3.0e-6
+ Q_pump = 1.38888888888889e-10  ! 0.5 mL/h; convert using 1 mL/h = 1e-6/3600 m3/s
+ Gamma = 0.055
+ Viscosity = 0.2
+ Epsilon_r = 40.0
+ Conductivity = 2.0e-6
+ Jet_current_A = 3.0e-9       ! chosen example current magnitude, NOT an experimental measurement
+ polymer_fraction = 0.12     ! MASS fraction, NOT percent
+ rho_polymer = 1200.0
+ rho_solvent = 997.0
+ cp_polymer = 1700.0
+ cp_solvent = 4180.0
+ thermal_conductivity_fluid = 0.6
+ viscosity_exponent = 3.0
+ activation_energy = 20000.0 ! J/mol
+ conductivity_exponent = 0.0
+ solvent_name = 'water'
+ latent_heat = 2.44e6
+ molar_mass = 0.01801528
+ psat_ref = 3169.0           ! Pa at T_psat_ref
+ T_psat_ref = 298.15         ! K
+ k_mass = 0.01              ! m/s; calibrated mass-transfer coefficient
+ T_air = 25.0               ! deg C
+ Humidity = 40.0            ! percent saturation of the modeled solvent in ambient gas
+ pressure_air = 101325.0
+ h_conv = 100.0             ! W/(m2 K); calibrated heat-transfer coefficient
+ Cd_drag = 0.01             ! effective axial skin-friction coefficient (not cross-flow cylinder Cd)
+ rho_air = 1.184
+ g_z = 9.81                 ! positive from emitter to collector; use 0 for horizontal setup
+ air_velocity = 0.0
+ side_boundary = 'grounded' ! grounded cylindrical chamber at r=R_max
+ Nr = 96
+ Nz = 160
+ Nj = 401
+ stretch_r = 11.0
+ stretch_z = 7.0
+ stretch_jet = 6.0
+ poisson_tol = 1e-10
+ jet_tol = 2e-7
+ outer_tol = 2e-5
+ max_pcg = 5000
+ max_jet = 1200
+ max_outer = 100
+ relaxation = 0.25
+ charge_relaxation = 0.35
+ space_charge = .true.
+ evaporation = .true.
+ joule_heat = .true.
+ viscous_heat = .true.
+ polarization_force = .true.
+/

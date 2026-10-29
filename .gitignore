@@ -1,0 +1,55 @@
+# Local Python environments and caches
+.venv*/
+venv/
+env/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Build products and generated simulation results
+build/
+dist/
+results/
+*.mod
+*.o
+*.so
+*.a
+*.exe
+original/validation/
+original/electrospinning
+original/electrospinning_debug
+original/*_mod.mod
+
+# Local secrets and authentication files (templates may be versioned)
+.env
+.env.*
+!.env.example
+!.env.template
+.aws/
+.ssh/
+.netrc
+.pypirc
+credentials.json
+service-account*.json
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Editor and temporary files; curated validation logs/data remain versioned
+.DS_Store
+*.swp
+*.swo
+*.tmp
+*.temp
+*~
+*.spec
+docs/*.aux
+docs/*.log
+docs/*.out
+docs/*.toc
